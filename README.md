@@ -62,8 +62,11 @@ Our robotic vehicle, **Alex**, is designed to carry out effective search-and-res
 
 ## Hardware Design
 
-![Front and Side Views](images/front_side_views.png)
-*Figure 2: Front and Side Views of Alex with labels*
+![Front View](images/front_view.png)
+*Figure 2a: Front View of Alex with labels*
+
+![Side View](images/side_view.png)
+*Figure 2b: Side View of Alex with labels*
 
 ### Component Overview
 
@@ -84,6 +87,9 @@ Our robotic vehicle, **Alex**, is designed to carry out effective search-and-res
 **Ultrasonic Sensor (HC-SR04):**
 The ultrasonic sensor is mounted at the front center of the top acrylic plate, aligned with the head of the astronaut and positioned centrally within the claw's span. It emits sound waves to measure distance and works alongside the LiDAR to determine when Alex is close enough to begin the rescue. Once a suitable range is detected, the robot automatically advances, decreasing the distance until the astronaut is within reach, triggering the claw to grab and drag the astronaut accurately.
 
+![Ultrasonic Sensor](images/ultrasonic_sensor.png)
+*Figure 5: Zoomed in view of Ultrasonic Sensor*
+
 **Claw:**
 The elevation of the claw was carefully adjusted to grip around the centre of gravity of the Red astronaut, ensuring it was neither too low nor too high. This prevents toppling during gripping and movement, allowing for stable and secure handling. Cardboard extensions are added to the outer arms to increase surface area and enhance grip stability, while the inner arms are reinforced with double-layered ice cream sticks to provide added structural rigidity and prevent flexing under load. Additionally, each outer arm — one placed high and the other low — effectively pushes the astronaut toward the claw's embrace, helping Alex secure a firmer hold.
 
@@ -93,7 +99,7 @@ The elevation of the claw was carefully adjusted to grip around the centre of gr
 **Colour Sensor:**
 The colour sensor is fixed at the very front of the robot, positioned slightly below and between the pincers of the claw. This placement ensures that when Alex grips an astronaut, the sensor is brought into the closest possible proximity to it. By doing this, we minimise external light interference and maximise reading accuracy, allowing the sensor to capture precise RGB values for reliable colour classification.
 
-![Colour Sensor](images/colour_sensor.png)
+![Colour Sensor](images/colour_sensor.jpg)
 *Figure 7: Zoomed in view of Colour Sensor*
 
 **Trapdoor:**
@@ -164,9 +170,6 @@ Due to a faulty TCS3200 colour sensor, we decided to improvise and acquired the 
 
 **Calibration:**
 Little calibration is needed because both TCS3200 and TCS34725 have a built-in LED to overpower the variance of ambient light; all we needed to do was to adjust the modes to accurately distinguish between red and green.
-
-![Calibration Setup](images/calibration_setup.png)
-*Figure 4: A segment of the initialisation setup function, on selected modes*
 
 ### Servos
 
