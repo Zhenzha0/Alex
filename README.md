@@ -1,4 +1,4 @@
-# CG2111A — "Alex to the Rescue"
+# Alex to the Rescue
 
 > **CG2111A Engineering Principle and Practice II** | Semester 2, AY2024/2025 | Team B04-3A
 
